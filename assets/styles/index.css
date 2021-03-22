@@ -11,13 +11,14 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
     background-color: #F5DB13;
     box-shadow: 0px 3px 21px -5px rgba(0,0,0,0.75);
 }
 
 header > img {
-    width: 64px;
+    width: 100px;
+    margin-left: 70px;
+    
 }
 
 header > button {
@@ -27,15 +28,15 @@ header > button {
 
 .navbar {
     display: none;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .navbar > a {
     color: black;
     font-family: "Karla";
-    font-size: 1.5rem;
-    margin: 0 20px 0 0;    
-}
+    font-size: 1.2rem;
+    margin: 0 60px 0 0;    
+}   
 
 #pokedex { text-decoration: none;}
 
@@ -43,62 +44,156 @@ header > button {
 
 #documentation { text-decoration: none;}
 
-.pikachu {
-    max-width: 100%;    
+.pokemon {
+    max-width: 230px;
 }
 
-.link-pokemons {
-    width: 300px;
-    height: 50px;
-    border-radius: 11px;
-    background: #73D677;
-    box-shadow: 0px 7px 0px #5eaf62; 
-    margin-top: 20px;
-    font-size: 23px;   
-    font-weight: normal;
-    display: flex;    
-    align-items: center;    
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: white;
 }
 
 main {
+    min-height: 100vh;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(#F5DB13, #F2B807);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    background: rgb(21, 21, 21);
+    font-family: 'Karla';  
     flex: 1;
 }
 
-main > h1 {
-    font-size: 42px;      
-    font-weight: normal;
-    padding: 15px 40px;
+.legendaries {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 4px;
+    font-size: 50px;
+    display: flex;
+    justify-content: left;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-main > p {
-    font-size: 24px;      
+#linha_legendaries{
+    margin-top: 12px;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    height: 1px;
+}
+
+.centro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 120px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 90px; 
+    margin-right: 90px;
+    padding-left: 150px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20.11px;
+    color: #ffffff;
+}
+#titulo{
+    font-family: 'Karla';
+    font-weight: 400px;
+    font-style: normal;
+    line-height: 84.17px;
+    letter-spacing: 4px;
+    font-size: 50px;
+    color: #fdfdfd;
+}
+
+.propriedades{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    font-family: Karla;
+    font-style: normal;
     font-weight: normal;
-    padding: 0 40px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FDFDFD;
+}
+
+.item_esquerda{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.item_direita{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 70px;
+}
+.valor{
+    font-weight: bold;
+}
+
+.barras{
+    display: flex;
+    flex-direction: row;
+}
+
+.barra_amarela{
+    color: #F5DB13;
+    background-color: #F5DB13;
+    height: 7.01px;
+    width: 180px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.barra_branca{
+    color: #F6F7F9;
+    background-color: #F6F7F9;
+    height: 7.01px;
+    width: 40px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.carrossel{
+    margin-left: 150px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.arrow{
+    padding-bottom: 65px;
+    max-width: 80%;
+    height: auto;
+}
+
+.card{
+    max-width: 155px;
+    height: auto;
 }
 
 @media(min-width: 481px) {
     header {
-        padding: 20px 10px;
+        padding: 10px 35px;
     }
 
     header > img {
-        width: 128px;
+        width: 100px;
     }    
 }
 
